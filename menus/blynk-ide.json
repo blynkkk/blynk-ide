@@ -1,0 +1,13 @@
+{
+  "menu": [
+    {
+      "label": "Blynk",
+      "submenu": [
+        {
+          "label": "Import Blynk project ...",
+          "command": "blynk-ide:import"
+        }
+      ]
+    }
+  ]
+}

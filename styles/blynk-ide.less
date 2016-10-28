@@ -1,0 +1,91 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+
+//overrides
+atom-notifications {
+  z-index: 10000;
+}
+
+.blynk-ide {
+
+  .form-control {
+    border-color: @input-border-color;
+    background-color: @button-background-color;
+    font-size: @input-font-size;
+    color: @text-color;
+    border-radius: @component-border-radius;
+
+    &[disabled] {
+      background-color: @button-background-color;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      background-color: @button-background-color-hover;
+    }
+  }
+
+  .form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+      font-size: 14px;
+    }
+
+    .button-group {
+      padding-top: 10px;
+      flex-direction: row;
+    }
+  }
+
+  .import-form {
+    .form-control {
+      width: 400px;
+    }
+  }
+
+  .login-form {
+    .form-control {
+      width: 300px;
+    }
+  }
+
+  .is-hidden {
+    display: none;
+  }
+
+  .directory-control {
+    padding: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+
+    .directory-input {
+      display: flex;
+      flex-grow: 1;
+
+    }
+
+    .pick-directory {
+      display: flex;
+    }
+  }
+
+  section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+    .settings-view {
+      flex-direction: column;
+    }
+  }
+}
