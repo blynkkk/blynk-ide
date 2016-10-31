@@ -5,9 +5,6 @@
   "description": "A short description of your package",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": "blynk-ide:import"
-  },
   "repository": "https://github.com/atom/blynk-ide",
   "license": "MIT",
   "engines": {

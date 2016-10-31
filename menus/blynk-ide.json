@@ -4,8 +4,39 @@
       "label": "Blynk",
       "submenu": [
         {
-          "label": "Import Blynk project ...",
-          "command": "blynk-ide:import"
+          "label": "Home",
+          "command": "blynk-ide:home"
+        },
+        {
+          "label": "Create New Blynk project ...",
+          "command": "blynk-ide:new"
+        },
+        {
+          "label": "Documentation",
+          "command": "blynk-ide:documentation"
+        },
+        {
+          "label": "Help",
+          "submenu": [
+            {"type": "separator"},
+            {
+              "label": "Twitter",
+              "command": "blynk-ide:help-twitter"
+            },
+            {
+              "label": "Facebook",
+              "command": "blynk-ide:help-facebook"
+            },
+            {"type": "separator"},
+            {
+              "label": "Website",
+              "command": "blynk-ide:help-website"
+            },
+            {
+              "label": "About",
+              "command": "blynk-ide:help-about"
+            }
+          ]
         }
       ]
     }
