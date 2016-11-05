@@ -6,28 +6,27 @@
 
 //overrides
 atom-notifications {
-  z-index: 10000;
+  z-index: 100000 !important;
+}
+
+.form-control {
+  border-color: @input-border-color;
+  background-color: @button-background-color;
+  font-size: @input-font-size;
+  color: @text-color;
+  border-radius: @component-border-radius;
+
+  &[disabled] {
+    background-color: @button-background-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @button-background-color-hover;
+  }
 }
 
 .blynk-ide {
-
-  .form-control {
-    border-color: @input-border-color;
-    background-color: @button-background-color;
-    font-size: @input-font-size;
-    color: @text-color;
-    border-radius: @component-border-radius;
-
-    &[disabled] {
-      background-color: @button-background-color;
-    }
-
-    &:hover,
-    &:focus {
-      box-shadow: none;
-      background-color: @button-background-color-hover;
-    }
-  }
 
   .form {
     margin-top: 20px;
